@@ -170,18 +170,16 @@
 .page-title {
   font-family: "ConthraxLocal", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 600;
-  font-size: clamp(2rem, 3vw, 2.6rem); /* Чуть крупнее, чем было */
-  line-height: 1.2;
+  font-size: clamp(1.4rem, 2.1vw, 1.9rem); /* заметно компактнее */
+  line-height: 1.25;
 }
-
 .section-title {
   font-family: "ConthraxLocal", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 600;
-  font-size: clamp(1.2rem, 1.6vw, 1.4rem); /* Заголовки блоков поменьше */
+  font-size: clamp(1.1rem, 1.4vw, 1.3rem);
   line-height: 1.3;
-  margin-top: 18px;
-  margin-bottom: 6px;
 }
+
 
   </style>
 
@@ -259,16 +257,28 @@
 
     <div class="divider"></div>
 
-    <!-- Английский блок -->
+    <!-- English block -->
     <section id="en" class="card" lang="en">
-      <div class="badge"><span></span> Draft monograph · v0.1 · 2025</div>
-      <h1>OS Security as a Science</h1>
-      <h2>Anticipatory Improvements Under Countermeasures</h2>
+      <div class="badge"><span></span> Monograph</div>
+      <h1 class="page-title">Kernel Protection of Operating Systems Under Countermeasures</h1>
+     
+<div class="buttons">
+  <!-- View -->
+  <a class="btn-primary"
+     href="/pdf/monograph.pdf"
+     target="_blank"
+     rel="noopener">
+    View PDF online
+  </a>
 
-      <p class="meta">
-        Igor Korkin, Ph.D. Draft monograph · kernel‑mode protection, hypervisor‑based architectures,
-        memory forensics, and detection of advanced rootkits and EDR evasion techniques.
-      </p>
+  <!-- Download -->
+  <a class="btn-ghost"
+     href="/pdf/monograph.pdf"
+     download="Korkin_OS_kernel_security_monograph.pdf">
+    Download PDF
+  </a>
+</div>
+     
 
       <p class="lead">
         This monograph brings together more than a decade of research in operating system security:
@@ -283,22 +293,12 @@
         </p>
       </div>
 
-      <div class="buttons">
-  <!-- Просмотр в новой вкладке -->
-  <a class="btn-primary"
-     href="/pdf/monograph.pdf"
-     target="_blank"
-     rel="noopener">
-    View PDF online
-  </a>
-
-  <!-- Явное скачивание -->
-  <a class="btn-ghost"
-     href="/pdf/monograph.pdf"
-     download="Korkin_OS_kernel_security_monograph.pdf">
-    Download PDF
-  </a>
-</div>
+       <p class="meta">
+        Igor Korkin, Ph.D. Draft monograph · kernel‑mode protection, hypervisor‑based architectures,
+        memory forensics, and detection of advanced rootkits and EDR evasion techniques.
+      </p>
+      
+      
 
       <div class="footer-links">
         Source: GitHub repository (this site). Main site:
